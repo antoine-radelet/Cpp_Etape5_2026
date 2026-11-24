@@ -7,26 +7,26 @@ using namespace std;
 namespace planning {
 
     Classroom::Classroom(){
-        cout<<"constructeur par defaut (filleC)"<<endl;
+        //cout<<"constructeur par defaut (filleC)"<<endl;
         setId(0);
         setName("default");
         setSeatingCapacity(0);
     }
 
     Classroom::Classroom(int i, const string& n, int sc): Schedulable(i) {
-        cout << "constructeur d'initialisation (filleC)" << endl;
+        //cout << "constructeur d'initialisation (filleC)" << endl;
         setName(n);
         setSeatingCapacity(sc);
     }
 
     Classroom::Classroom(const Classroom& c): Schedulable(c) {
-        cout<<"constructeur de copie (filleC)"<<endl;
+        //cout<<"constructeur de copie (filleC)"<<endl;
         setName(c.name);
         setSeatingCapacity(c.seatingCapacity);
     }
 
     Classroom::~Classroom() {
-        cout<<">>> destructeur (filleC) <<<"<<endl;
+        //cout<<">>> destructeur (filleC) <<<"<<endl;
     }
 
     void Classroom::setName(const string& n) {
@@ -54,7 +54,7 @@ namespace planning {
     }
 
     Classroom& Classroom::operator=(const Classroom& c) {
-        setId(c.getId());
+        Schedulable(c);//setId(c.getId());
         name = c.name;
         seatingCapacity = c.seatingCapacity;
         return *this;

@@ -6,23 +6,23 @@ using namespace std;
 namespace planning {
 
     Group::Group(){
-        cout<<"constructeur par defaut (filleG)"<<endl;
+        //cout<<"constructeur par defaut (filleG)"<<endl;
         setId(0);
         setName("default");
     }
 
-    Group::Group(int i, const string& n) : Schedulable(i), name(n) {
-        cout << "constructeur d'initialisation (filleG)" << endl;
+    Group::Group(int i, const string& n) : Schedulable(i){
+        //cout << "constructeur d'initialisation (filleG)" << endl;
         setName(n);
     }
 
     Group::Group(const Group& g) : Schedulable(g){
-        cout<<"constructeur de copie (filleG)"<<endl;
+        //cout<<"constructeur de copie (filleG)"<<endl;
         setName(g.name);
     }
 
     Group::~Group() {
-        cout<<">>> destructeur (filleG) <<<"<<endl;
+        //cout<<">>> destructeur (filleG) <<<"<<endl;
     }
 
     void Group::setName(const string& n) {

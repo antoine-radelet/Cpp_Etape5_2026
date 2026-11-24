@@ -6,26 +6,26 @@ using namespace std;
 namespace planning {
 
     Professor::Professor(){
-        cout<<"constructeur par defaut (filleP)"<<endl;
+        //cout<<"constructeur par defaut (filleP)"<<endl;
         setId(0);
         setLastName("default");
         setFirstName("default");
     }
 
     Professor::Professor(int i, const string& ln, const string& fn):Schedulable(i){
-        cout << "constructeur d'initialisation (filleP)" << endl;
+        //cout << "constructeur d'initialisation (filleP)" << endl;
         setLastName(ln);
         setFirstName(fn);
     }
 
     Professor::Professor(const Professor& p):Schedulable(p){
-        cout<<"constructeur de copie (filleP)"<<endl;
+        //cout<<"constructeur de copie (filleP)"<<endl;
         setLastName(p.lastName);
         setFirstName(p.firstName);
     }
 
     Professor::~Professor() {
-        cout<<">>> destructeur (filleP) <<<"<<endl;
+        //cout<<">>> destructeur (filleP) <<<"<<endl;
     }
 
     void Professor::setLastName(const string& ln) { 

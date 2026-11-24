@@ -1,5 +1,5 @@
-Test4:	Test4.cpp Event.o Time.o Timing.o Schedulable.o Professor.o Group.o Classroom.o
-	g++  Test4.cpp Event.o Time.o Timing.o Schedulable.o Professor.o Group.o Classroom.o -o Test4
+Test5:	Test5.cpp Event.o Time.o Timing.o Schedulable.o Professor.o Group.o Classroom.o Exception.o
+	g++  Test5.cpp Event.o Time.o Timing.o Schedulable.o Professor.o Group.o Classroom.o Exception.o -o Test5
 
 Event.o:	Event.cpp Event.h
 	g++ Event.cpp -c
@@ -21,3 +21,6 @@ Group.o:	Group.cpp Group.h
 
 Classroom.o:	Classroom.cpp Classroom.h
 	g++ Classroom.cpp -c
+
+Exception.o:	Exception.cpp Exception.h
+	g++ Exception.cpp -c

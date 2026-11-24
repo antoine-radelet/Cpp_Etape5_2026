@@ -84,7 +84,6 @@ namespace planning{
 		
 		ttemp.hour+=h;
 		if(ttemp.hour>23) {
-			cout<<"heure au dela de 24h"<<endl;
 			return t;
 		}
 		else return ttemp;
@@ -105,7 +104,6 @@ namespace planning{
 		
 		ttemp.hour+=t2.hour;
 		if(ttemp.hour>23) {
-			cout<<"heure au dela de 24h"<<endl;
 			return t1;
 		}
 		else return ttemp;
@@ -128,7 +126,6 @@ namespace planning{
 		
 		ttemp.hour-=h;
 		if(ttemp.hour<0) {
-			cout<<"heure en dessous de 0h"<<endl;
 			return t;
 		}
 		else return ttemp;
@@ -150,7 +147,6 @@ namespace planning{
 		
 		ttemp.hour-=t2.hour;
 		if(ttemp.hour<0) {
-			cout<<"heure en dessous de 0h"<<endl;
 			return t1;
 		}
 		else return ttemp;
